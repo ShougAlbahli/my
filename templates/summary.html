@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Summary</title>
+</head>
+<body>
+  <h1>Summary</h1>
+  <pre>{{ summary }}</pre>
+  <form method="post" action="/download">
+    <input type="hidden" name="summary" value="{{ summary }}">
+    <button type="submit">Download as PDF</button>
+  </form>
+  <a href="/">Back</a>
+</body>
+</html>

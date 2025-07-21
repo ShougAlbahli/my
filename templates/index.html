@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Research Summarizer</title>
+</head>
+<body>
+  <h1>Upload Research Paper</h1>
+  {% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".pdf,.docx,.txt" required>
+    <button type="submit">Summarize</button>
+  </form>
+</body>
+</html>
